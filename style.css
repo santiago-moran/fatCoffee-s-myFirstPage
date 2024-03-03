@@ -104,6 +104,22 @@ a:hover {
     align-items: center;
     height: 400px;
     width: 100%;
+    view-timeline-name: --scaleAnimation;
+    view-timeline-axis: block;
+    animation-name: viewTL-animation;
+    animation-fill-mode: both;
+    animation-range: entry 25% cover 50%;
+    animation-timeline: --scaleAnimation;
+}
+@keyframes viewTL-animation {
+    from {
+        scale: 25%;
+        opacity: 0;
+    }
+    to {
+        scale: 100%;
+        opacity: 1;
+    }
 }
 h3 {
     font-size: 25px;
