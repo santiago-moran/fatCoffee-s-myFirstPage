@@ -173,6 +173,23 @@ b:hover iframe {
     flex-direction: column;
     justify-content: space-evenly;
 }
+.meet-us__img img {
+    width: 0;
+    view-timeline: --widthAnimation;
+    view-timeline-axis: block;
+    animation-name: timelineWidth;
+    animation-timeline: --widthAnimation;
+    animation-fill-mode: both;
+    animation-range: entry 25% cover 30%;
+}
+@keyframes timelineWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 .shop {
     display: flex;
     flex-direction: column;
@@ -273,17 +290,17 @@ footer {
         display: inline-block;
     }
     .meet-us {
-        height: 100vh;
-        justify-content: space-around;
+        height: 50vh;
+        justify-content: space-evenly;
     }
     .meet-us p {
         font-size: 20px;
     }
     .meet-us__img {
         width: 100%;
-        height: 100%;
+        height: max-content;
         display: grid;
-        grid-template-columns: repeat(2, 500px);
+        grid-template-columns: repeat(2, 400px);
         grid-template-rows: repeat(2, 300px);
         justify-items: center;
         align-content: center;
@@ -314,8 +331,9 @@ footer {
         display: inline-block;
     }
     .meet-us {
-        justify-content: space-evenly;
         width: 100%;
+        height: 50vh;
+        justify-content: space-evenly;
     }
     .meet-us p {
         font-size: 20px;
@@ -323,14 +341,16 @@ footer {
     }
     .meet-us__img {
         width: 100%;
-        height: 100%;
+        height: max-content;
         display: grid;
         grid-template-columns: repeat(2, 40%);
-        grid-template-rows: repeat(2, 49%);
+        grid-template-rows: repeat(2, 200px);
         gap: 20px;
+        align-content: center;
     }
     .meet-us__img img {
         width: 100%;
+        height: 100%;
     }
 }
 @media screen and (min-width: 321px) AND (max-width: 420px) {
