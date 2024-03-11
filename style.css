@@ -246,7 +246,7 @@ footer {
 }
 .login-body__contain-login {
     background: #333;
-    border-radius: 5px;
+    border-radius: 30px;
     border: solid 5px #000;
     height: 500px;
     width: 300px;
