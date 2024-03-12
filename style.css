@@ -237,7 +237,7 @@ footer {
     font-size: 12px;
 }
 .login-body {
-    background: #111;
+    background-image: url(images/background-image.jpg);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -245,9 +245,11 @@ footer {
     overflow: hidden;
 }
 .login-body__contain-login {
-    background: #333;
+    background: transparent;
+    backdrop-filter: blur(5px);
     border-radius: 30px;
-    border: solid 5px #000;
+    border: solid 1.5px #333;
+    box-shadow: 5px 5px 10px #222;
     height: 500px;
     width: 300px;
     display: flex;
@@ -284,7 +286,7 @@ footer {
     cursor: pointer;
     width: 70%;
     border: solid 2px #222;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.5s, transform 0.5s;
 }
 .login-body__contain-login__login-form form :last-child:hover {
@@ -293,11 +295,11 @@ footer {
 }
 input {
     font-weight: 100;
-    background: #222;
-    border-radius: 5px;
+    background: #222a;
+    border-radius: 10px;
 }
 input:focus {
-    background: #000;
+    background: #000a;
     border: solid 3px #fff;
 }
 @media screen and (min-width: 1024px) AND (max-width: 2560px) {
