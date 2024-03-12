@@ -19,7 +19,7 @@ header {
     backdrop-filter: blur(5px);
     border-bottom: solid 2px #111;
     box-shadow: 5px 5px 10px #111;
-    height: 80px;
+    height: 65px;
 }
 
 .containNav h1 {
@@ -40,19 +40,21 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
-    width: max-content;
-    text-align: right;
-    height: 200px;
+    width: 100vw;
+    text-align: center;
+    height: 150px;
     position: absolute;
     top: -300px;
-    right: 0;
     opacity: 0;
     transition: top 0.5s, opacity 0.5s;
     padding-top: 20px;
+    right:-20px;
+    background: #333e;
+    box-shadow: 5px 5px 5px #222;
 }
 .containNav__menu:hover ul{
-    opacity: 100%;
-    top: 0;
+    opacity: 1;
+    top: 45px;
 }
 a {
     text-decoration: none;
@@ -315,13 +317,18 @@ input:focus {
         background-attachment: scroll;
         background-repeat: no-repeat;
     }
-    /* .containNav {
+    .containNav {
     background: transparent;
     backdrop-filter: blur(5px);
     border-bottom: solid 2px #111;
     box-shadow: 5px 5px 10px #111;
     height: 80px;
-    } */
+    }
+    .containNav__menu ul {
+        background: none;
+        height: max-content;
+        box-shadow: none;
+    }
     .containNav h1 {
         position: absolute;
         transform: translate(20px);
