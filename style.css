@@ -21,7 +21,10 @@ header {
     box-shadow: 5px 5px 10px #111;
     height: 65px;
 }
-
+.containNav__menu:hover ul{
+    opacity: 1;
+    top: 45px;
+}
 .containNav h1 {
     transform: translate(20px);
 }
@@ -51,10 +54,6 @@ header {
     right:-20px;
     background: #333e;
     box-shadow: 5px 5px 5px #222;
-}
-.containNav__menu:hover ul{
-    opacity: 1;
-    top: 45px;
 }
 a {
     text-decoration: none;
@@ -328,6 +327,10 @@ input:focus {
         background: none;
         height: max-content;
         box-shadow: none;
+    }
+    .containNav__menu:hover ul{
+        opacity: 1;
+        top: 0;
     }
     .containNav h1 {
         position: absolute;
