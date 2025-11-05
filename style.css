@@ -115,7 +115,7 @@ a:hover {
     view-timeline-axis: block;
     animation-name: viewTL-animation;
     animation-fill-mode: both;
-    animation-range: entry 25% cover 50%;
+    animation-range: cover 20% cover 30%;
     animation-timeline: --scaleAnimation;
 }
 @keyframes viewTL-animation {
@@ -187,7 +187,7 @@ b:hover iframe {
     animation-name: timelineWidth;
     animation-timeline: --widthAnimation;
     animation-fill-mode: both;
-    animation-range: entry 10% cover 30%;
+    animation-range: cover 10% cover 20%;
 }
 @keyframes timelineWidth {
     from {
